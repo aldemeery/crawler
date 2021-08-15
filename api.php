@@ -15,5 +15,7 @@ $output = $crawler->crawledPages();
 // 'metrics' is defined in helpers.php
 $metrics = metrics($output);
 
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Headers: *');
 header('Content-Type: application/json');
 echo json_encode($metrics);
