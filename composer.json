@@ -1,0 +1,35 @@
+{
+    "name": "aldemeery/crawler",
+    "description": "Simple Crawler",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Osama Aldemeery",
+            "email": "aldemeery@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "filp/whoops": "^2.14",
+        "guzzlehttp/guzzle": "^7.3",
+        "sabre/uri": "^2.2",
+        "symfony/stopwatch": "^5.3"
+    },
+    "require-dev": {
+        "spatie/ray": "^1.29",
+        "symfony/var-dumper": "^5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        },
+        "files": [
+            "helpers.php"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}
